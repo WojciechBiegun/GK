@@ -1,0 +1,5 @@
+package sl.shapes;
+
+public class RegularPolygon {
+
+}
