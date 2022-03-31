@@ -9,30 +9,32 @@ preserveAspectRatio="xMidYMid">
 <!-- The scene description goes here! -->
 <!-- Frame -->
 <rect fill="none" stroke="black" stroke-width="3" x="5" y="5" width="900" height="680"/>
+<!-- Definitions -->
+<defs>
+        <g id="circle">
+                <circle cx="270" cy="400" r="60"
+                fill="none" stroke="black" stroke-width="1.5">
+                </circle>
+                <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" />
+                <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(30) translate(164,-190)" />
+                <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(60) translate(211,-435)" />
+                <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(90) translate(130,-670)" />
+                <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(-30) translate(-236,80)" />
+                <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(-60) translate(-481,33)" />
+                <animateTransform attributeName="transform" type="rotate" from="0 270 400" to="360 270 400" dur="10s" repeatCount="indefinite"/>  
+
+        </g>
+</defs>
+<!-- End of definitions -->
+
 <!-- Tower 1 -->
+
+        
 <g>
     <!-- Wheel -->
-    <g>
-    <circle cx="270" cy="400" r="60"
-            fill="none" stroke="black" stroke-width="1.5"/>
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(30) translate(164,-190)" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(60) translate(211,-435)" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(90) translate(130,-670)" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(-30) translate(-236,80)" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(-60) translate(-481,33)" />
-    </g>
+    <use href="#circle" />
     <!-- Wheel 2 -->
-    <g transform="translate(260,110)">
-    <circle cx="270" cy="400" r="60"
-            fill="none" stroke="black" stroke-width="1.5"/>
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(30) translate(164,-190)" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(60) translate(211,-435)" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(90) translate(130,-670)" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(-30) translate(-236,80)" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(-60) translate(-481,33)" />
-    </g>
+    <use href="#circle" x="260" y="110"/>
 
     <rect fill="red" x="240" y="400" width="310" height="25" transform="rotate(23) translate(150,-150)"/>
     <polygon fill="blue" points="340,650 380,450 420,650"/>
@@ -40,55 +42,20 @@ preserveAspectRatio="xMidYMid">
 <!-- Tower 2 -->
 <g transform="translate(-140,-190) scale(0.8,0.8)">
     <!-- Wheel -->
-    <g>
-    <circle cx="270" cy="400" r="60"
-            fill="none" stroke="black" stroke-width="1.5"/>
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(30) translate(164,-190)" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(60) translate(211,-435)" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(90) translate(130,-670)" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(-30) translate(-236,80)" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(-60) translate(-481,33)" />
-    </g>
+    <use href="#circle" />
     <!-- Wheel 2 -->
-    <g transform="translate(260,110)">
-    <circle cx="270" cy="400" r="60"
-            fill="none" stroke="black" stroke-width="1.5"/>
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(30) translate(164,-190)" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(60) translate(211,-435)" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(90) translate(130,-670)" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(-30) translate(-236,80)" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(-60) translate(-481,33)" />
-    </g>
+    <use href="#circle" x="260" y="110"/>
+   
 
     <rect fill="red" x="240" y="400" width="310" height="25" transform="rotate(23) translate(150,-150)"/>
     <polygon fill="purple" points="340,650 380,450 420,650"/>
 </g>
 <!-- Tower 3 -->
 <g transform="translate(330,-150) scale(0.6,0.6)">
-    <!-- Wheel -->
-    <g>
-    <circle cx="270" cy="400" r="60"
-            fill="none" stroke="black" stroke-width="1.5"/>
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(30) translate(164,-190)" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(60) translate(211,-435)" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(90) translate(130,-670)" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(-30) translate(-236,80)" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(-60) translate(-481,33)" />
-    </g>
+     <!-- Wheel -->
+    <use href="#circle" />
     <!-- Wheel 2 -->
-    <g transform="translate(260,110)">
-    <circle cx="270" cy="400" r="60"
-            fill="none" stroke="black" stroke-width="1.5"/>
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(30) translate(164,-190)" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(60) translate(211,-435)" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(90) translate(130,-670)" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(-30) translate(-236,80)" />
-    <line x1="210" y1="400" x2="330" y2="400" stroke="black" stroke-width="1.5" transform="rotate(-60) translate(-481,33)" />
-    </g>
+    <use href="#circle" x="260" y="110"/>
 
     <rect fill="red" x="240" y="400" width="310" height="25" transform="rotate(23) translate(150,-150)"/>
     <polygon fill="green" points="340,650 380,450 420,650"/>
