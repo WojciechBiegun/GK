@@ -56,7 +56,57 @@ public class openGL extends GLJPanel implements GLEventListener, KeyListener{
 
 	private GLUT glut = new GLUT(); // An object for drawing GLUT shapes.
 
+	private void triangle(float j, float k, float n, GL2 gl2) {
 
+        gl2.glBegin(gl2.GL_TRIANGLE_FAN);
+
+        gl2.glVertex3d((Math.cos(j * 2 * Math.PI / n)), (Math.sin(j * 2 * Math.PI / n)), 1.5);
+        gl2.glVertex3d((Math.cos(k * 2 * Math.PI / n)), (Math.sin(k * 2 * Math.PI / n)), 1.5);
+        gl2.glVertex3d(0, 0, 0);
+
+        gl2.glEnd();
+    }
+
+    private void piramid(float n, GL2 gl2) {
+       
+        gl2.glScalef(5, 5, 5);
+        gl2.glRotatef(90, 1, 0, 0);
+        gl2.glTranslatef(0, 0, -1);
+        
+        for (int i = 0; i < n; i++) {
+        	triangle(i - 1, i, n, gl2);
+        }
+        
+    }
+
+    private void corkscrew(double n, GL2 gl2) {
+    	
+        double pi = Math.PI;
+        double t = 7;
+        double r = 2;
+        double kat, nastKat, x, y, z, h;
+
+        h = t / 1550; 
+        x = -5;
+        kat = 0;
+        gl2.glLineWidth(3);
+        gl2.glColor3d(1, 1, 0);
+
+       
+        gl2.glBegin(GL.GL_LINE_STRIP);
+        gl2.glColor3f(1, 1, 0);
+        while (x <= t) {
+            nastKat = (kat * pi / 180);
+            y = Math.cos(nastKat) * r;
+            z = Math.sin(nastKat) * r;
+            
+            gl2.glVertex3d(x, y, z);
+            x+=h;
+            kat += (n / 9);
+            
+        }
+        gl2.glEnd();
+    }
 	/**
 	 * The method that draws the current object, with its modeling transformation.
 	 */
@@ -70,6 +120,14 @@ public class openGL extends GLJPanel implements GLEventListener, KeyListener{
 		// (Objects should lie in the cube with x, y, and z coordinates in the
 		// range -5 to 5.)
 		
+		switch (objectNumber) {
+        case 1:
+        	corkscrew(8, gl2);
+            break;
+        case 2:
+        	piramid(3, gl2);
+            break;
+    }
 
 	}
 

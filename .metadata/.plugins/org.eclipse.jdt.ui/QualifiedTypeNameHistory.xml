@@ -2,4 +2,5 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="sl.shapes.RegularPolygon"/>
     <fullyQualifiedTypeName name="java.awt.geom.AffineTransform"/>
+    <fullyQualifiedTypeName name="com.jogamp.opengl.GL2"/>
 </qualifiedTypeNameHistroy>
